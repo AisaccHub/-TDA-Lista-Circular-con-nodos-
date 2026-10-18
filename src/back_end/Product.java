@@ -6,12 +6,14 @@ public class Product {
     private float price;
     private String name;
     private String description;
+    private String imagePath;
 
-    public Product (int id, float price, String name, String description){
+    public Product (int id, float price, String name, String description, String imagePath){
         this.id = id;
         this.price = price;
         this.name = name;
         this.description = description;
+        this.imagePath = imagePath;
     }
 
     public int getId(){
@@ -42,8 +44,15 @@ public class Product {
         this.description = description;
     }
 
+    public String getImagePath(){
+        return imagePath;
+    }
+    public void setImagePath(String imagePath){
+        this.imagePath = imagePath;
+    }
+
     @Override 
     public String toString(){
-        return "Product{" + "id=" + id +", price=" + price +", name='" + name + '\'' +", description='" + description + '\'' +'}';
+        return "Product{" + "id=" + id +", price=" + price +", name='" + name + '\'' +", description='" + description + '\'' +", imagePath='" + imagePath + '\'' +'}';
     }
 }
