@@ -66,7 +66,7 @@ public class ListaGUI extends JFrame {
 
         add(crearPanelBotones(), BorderLayout.SOUTH);
     }
-
+    //Nombres del panel del texto para el area del formulario
     private JPanel crearPanelFormulario() {
         pnlFormulario = new JPanel(new GridBagLayout());
         pnlFormulario.setBackground(COLOR_FORMULARIO);
@@ -143,7 +143,7 @@ public class ListaGUI extends JFrame {
 
         return pnlFicha;
     }
-
+    //Botones encargados de agregar, mover, eliminar y navegar el menu interactivo
     private JPanel crearPanelBotones() {
         JPanel pnlSur = new JPanel(new GridLayout(6, 1, 0, 4));
         pnlSur.setBorder(BorderFactory.createEmptyBorder(4, 8, 10, 8));
@@ -412,7 +412,7 @@ public class ListaGUI extends JFrame {
 
     // ------------------------- navegacion circular -------------------------
     // El anillo es doble: siguiente de "ultimo" es "primero" y anterior de
-    // "primero" es "ultimo", por eso next()/previous() ya hacen el transito.
+    // "primero" es "ultimo", por eso next()/previous() ya hacen el camino.
 
     private void siguiente() {
         if (catalogoVacio()) return;
