@@ -71,7 +71,7 @@ public class ListaGUI extends JFrame {
         pnlFormulario = new JPanel(new GridBagLayout());
         pnlFormulario.setBackground(COLOR_FORMULARIO);
         pnlFormulario.setBorder(BorderFactory.createTitledBorder(
-                BorderFactory.createLineBorder(COLOR_BORDE), " Datos de la pelicula (record Product) "));
+                BorderFactory.createLineBorder(COLOR_BORDE), " Datos de la pelicula "));
 
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(4, 6, 4, 6);
